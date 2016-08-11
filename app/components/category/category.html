@@ -1,0 +1,11 @@
+<ActionBar title="Dimensions">
+    <ActionItem text="Create" (tap)="create()" android.position="right"></ActionItem>
+</ActionBar>
+
+<GridLayout>
+    <ListView [items]="categoryList">
+        <template let-item="item">
+            <Label [text]="item.fName + ' ' + item.lName"></Label>
+        </template>
+    </ListView>
+</GridLayout>

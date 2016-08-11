@@ -1,0 +1,8 @@
+<ActionBar title="Create">
+    <NavigationButton text="Back" android.systemIcon="ic_menu_back"></NavigationButton>
+    <ActionItem text="Save" (tap)="save()" android.position="right"></ActionItem>
+</ActionBar>
+<StackLayout>
+    <TextField hint="First Name" [(ngModel)]="firstName"></TextField>
+    <TextField hint="Last Name" [(ngModel)]="lastName"></TextField>
+</StackLayout>
